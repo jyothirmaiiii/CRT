@@ -1,6 +1,13 @@
 def even_odd(n: int) -> str:
-   pass
-
+    if n % 2 == 0:
+        if n <= 5:
+            return "Not Weird"
+        elif n <= 20:
+            return "Weird"
+        else:
+            return "Not Weird"
+    else:
+        return "Weird"
 
 if __name__ == '__main__':
     n = int(input())
